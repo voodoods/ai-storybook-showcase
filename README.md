@@ -12,24 +12,24 @@ This repository is using
 
 First install depenencies using [yarn](https://yarnpkg.com/):
 ```sh
-yarn install
+npm install
 ```
 
 Start Storybook in local development mode:
 ```sh
-yarn storybook
+npm run storybook
 ```
 
 ## Run tests
 
 ```sh
-yarn test
+npm run test
 ```
 
 ## Create production build
 
 ```sh
-yarn build
+npm run build
 ```
 
 # License
