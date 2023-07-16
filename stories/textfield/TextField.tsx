@@ -2,7 +2,6 @@ import React from 'react';
 import 'tailwindcss/tailwind.css'
 
 export interface TextFieldProps {
-    primary?: boolean;
     backgroundColor?: string;
     size?: 'small' | 'medium' | 'large';
     label?: string;
@@ -16,12 +15,12 @@ export interface TextFieldProps {
 
 // please apply the properties from the interface above to the component below
 
-const TextField: React.FC<TextFieldProps> = ({ label, placeholder, value, primary, backgroundColor, size, disabled, error, onChange, onClick }) => {
+const TextField: React.FC<TextFieldProps> = ({ label, placeholder, value, backgroundColor, size, disabled, error, onChange, onClick }) => {
     return (
         <div className="flex flex-col w-60">
             <label className="text-sm text-gray-500">{label}</label>
             <input
-                className={`border-2 border-gray-300 rounded-md p-2 ${error ? 'border-red-500' : ''} ${disabled ? 'bg-gray-200' : ''} ${primary ? 'bg-blue-500 text-white' : ''} ${size === 'small' ? 'text-sm' : size === 'medium' ? 'text-md' : 'text-lg'}`}
+                className={`border-2 border-gray-300 rounded-md p-2 ${error ? 'border-red-500' : ''} ${disabled ? 'bg-gray-200' : ''} ${size === 'small' ? 'text-sm' : size === 'medium' ? 'text-md' : 'text-lg'}`}
                 type="text"
                 placeholder={placeholder}
                 value={value}

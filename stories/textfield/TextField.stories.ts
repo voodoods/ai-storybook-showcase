@@ -13,19 +13,6 @@ export default {
     },
 };
 
-export const Primary = {
-    args: {
-        primary: true,
-        label: 'TextField',
-    },
-};
-
-export const Secondary = {
-    args: {
-        label: 'TextField',
-    },
-};
-
 export const Large = {
     args: {
         size: 'large',
