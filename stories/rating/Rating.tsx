@@ -37,7 +37,7 @@ export const Rating: React.FC<RatingProps> = ({
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: direction }}>
+        <div style={{ display: 'flex', flexDirection: direction }} data-testid="rating">
             {stars.map((star) => {
                 const isFilled = (hoverRating || ratingState) ? star <= (hoverRating || ratingState) : star <= ratingState;
                 const starColor = isFilled ? color : 'grey';

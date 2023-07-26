@@ -1,13 +1,13 @@
 // create a Storybook story for the ./Rating.tsx component
 
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { Rating } from './Rating';
 
 //👇 This default export determines where your story goes in the story list
 export default {
-    title: 'Components/Rating',
+    title: 'Example/Rating',
     component: Rating,
     tags: ['autodocs'],
     argTypes: {
@@ -33,6 +33,9 @@ export default {
             action: 'onSetRating',
         }
     },
+    parameters: {
+        jest: ['Rating.test.tsx'],
+    }
 } as Meta;
 
 export const NoRating = {
