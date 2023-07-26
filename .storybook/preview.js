@@ -1,4 +1,8 @@
 /** @type { import('@storybook/react').Preview } */
+import { withTests } from '@storybook/addon-jest';
+
+import results from '../.jest-test-results.json';
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,6 +13,13 @@ const preview = {
       },
     },
   },
+  decorators: [
+    withTests({
+      results,
+    }),
+  ]
 };
+
+
 
 export default preview;
