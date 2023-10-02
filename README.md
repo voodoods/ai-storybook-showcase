@@ -1,5 +1,5 @@
 # ai-storybook-showcase
-Showcasing how to use A.I. development tools to create a design system using Storybook
+Showcasing a collection of UI components created with the help of A.I. code generation tools in Storybook.
 
 This repository is using 
 
